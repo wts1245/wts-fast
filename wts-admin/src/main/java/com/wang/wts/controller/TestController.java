@@ -5,6 +5,7 @@ import com.wang.wts.service.UserService;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -23,7 +24,7 @@ public class TestController {
     private UserService userService;
 
     @ApiOperation(value = "测试",notes = "测试")
-    @RequestMapping("/li")
+    @GetMapping("/li")
     public List<UserEntity> queryUser(){
         return userService.queryUser();
     }
