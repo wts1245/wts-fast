@@ -1,5 +1,6 @@
 package com.wang.wts.dao;
 
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.wang.wts.entity.UserEntity;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
@@ -12,12 +13,7 @@ import java.util.List;
  * @Version 1.0
  */
 
-@Mapper
-public interface UserDao {
+@Repository
+public interface UserDao extends BaseMapper<UserEntity> {
 
-    /**
-     * 查询
-     * @return 用户信息
-     */
-    List<UserEntity> queryUser();
 }

@@ -25,8 +25,8 @@ public class TestController {
 
     @ApiOperation(value = "测试",notes = "测试")
     @GetMapping("/li")
-    public List<UserEntity> queryUser(){
-        return userService.queryUser();
+    public String queryUser(){
+        return "security";
     }
 
 }

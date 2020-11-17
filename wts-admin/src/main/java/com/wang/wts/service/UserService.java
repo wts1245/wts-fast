@@ -10,5 +10,5 @@ import java.util.List;
  * @Version 1.0
  */
 public interface UserService {
-    List<UserEntity> queryUser();
+//    List<UserEntity> queryUser();
 }

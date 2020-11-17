@@ -17,11 +17,11 @@ import java.util.List;
 @Service
 public class UserServiceImpl implements UserService {
 
-    @Autowired
-    private UserDao userDao;
-
-    @Override
-    public List<UserEntity> queryUser() {
-        return userDao.queryUser();
-    }
+//    @Autowired
+//    private UserDao userDao;
+//
+//    @Override
+//    public List<UserEntity> queryUser() {
+//        return userDao.queryUser();
+//    }
 }
